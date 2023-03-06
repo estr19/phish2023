@@ -1,11 +1,9 @@
 import React from 'react';
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
-import './App.css';
 import Main from './Main';
 import SongInfo from './SongInfo';
 
 function App() {
-
   return (
     <div>
       <Router>

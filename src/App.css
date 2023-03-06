@@ -117,14 +117,15 @@ h4 {
 }
 
 .item {
+  background-color: rgba(157, 201, 225, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(157, 201, 225, 0.75);
   width: 300px;
   padding: 1em;
   margin: 0.7em 3em 1.4em;

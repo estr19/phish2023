@@ -80,7 +80,7 @@ export const phish = [
     },
   },
   {
-    id: 5,
+    id: 6,
     date: 'August 31st',
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
@@ -96,7 +96,7 @@ export const phish = [
     },
   },
   {
-    id: 5,
+    id: 7,
     date: 'September 1st',
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
@@ -112,7 +112,7 @@ export const phish = [
     },
   },
   {
-    id: 5,
+    id: 8,
     date: 'September 2nd',
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
@@ -128,7 +128,7 @@ export const phish = [
     },
   },
   {
-    id: 5,
+    id: 9,
     date: 'September 3rd',
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
