@@ -85,7 +85,7 @@ export const phish = [
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
     link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.051365430332!2d-104.8931942!3d39.8058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7af7fc4c488d%3A0x73bed28684b8794f!2s6000%20Victory%20Way%2C%20Commerce%20City%2C%20CO%2080022!5e0!3m2!1sen!2sus!4v1678133379598!5m2!1sen!2sus',
-    time: 	1690414200000,
+    time: 	1693524600000,
     address: '6000 Victory Way, Commerce City, CO, USA',
     tickets: 'https://phish.com/tours/dates/thu-2023-8-31-dicks-sporting-goods-park/',
     minLeft: {
@@ -101,7 +101,7 @@ export const phish = [
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
     link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.051365430332!2d-104.8931942!3d39.8058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7af7fc4c488d%3A0x73bed28684b8794f!2s6000%20Victory%20Way%2C%20Commerce%20City%2C%20CO%2080022!5e0!3m2!1sen!2sus!4v1678133379598!5m2!1sen!2sus',
-    time: 	1690414200000,
+    time: 	1693611000000,
     address: '6000 Victory Way, Commerce City, CO, USA',
     tickets: 'https://phish.com/tours/dates/fri-2023-9-01-dicks-sporting-goods-park/',
     minLeft: {
@@ -117,7 +117,7 @@ export const phish = [
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
     link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.051365430332!2d-104.8931942!3d39.8058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7af7fc4c488d%3A0x73bed28684b8794f!2s6000%20Victory%20Way%2C%20Commerce%20City%2C%20CO%2080022!5e0!3m2!1sen!2sus!4v1678133379598!5m2!1sen!2sus',
-    time: 	1690414200000,
+    time: 	1693697400000,
     address: '6000 Victory Way, Commerce City, CO, USA',
     tickets: 'https://phish.com/tours/dates/sat-2023-9-02-dicks-sporting-goods-park/',
     minLeft: {
@@ -133,7 +133,7 @@ export const phish = [
     venue: `Dick’s Sporting Goods Park`,
     photo: 'https://livemusicblog.com/wp-content/uploads/2013/09/Phish-Dicks.jpg',
     link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.051365430332!2d-104.8931942!3d39.8058396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7af7fc4c488d%3A0x73bed28684b8794f!2s6000%20Victory%20Way%2C%20Commerce%20City%2C%20CO%2080022!5e0!3m2!1sen!2sus!4v1678133379598!5m2!1sen!2sus',
-    time: 	1690414200000,
+    time: 	1693783800000,
     address: '6000 Victory Way, Commerce City, CO, USA',
     tickets: 'https://phish.com/tours/dates/sun-2023-9-03-dicks-sporting-goods-park/',
     minLeft: {
