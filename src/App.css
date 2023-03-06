@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kanit&family=Libre+Baskerville:ital,wght@0,400&display=swap');
+@font-face {
+  font-family: 'Timer';
+  src: url('./TickingTimebombBB.ttf');
+}
+
+body {
+  background: url('background-texture.jpg');
+  background-attachment: fixed;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  color: #016535;
+  margin: 0;
+}
+
+.timer {
+  font-family: 'Timer';
+  font-size: 3em;
+  margin: 0.25em;
+  padding: 0.25em .6em 0.1em;
+  background-color: #018e4a;
+  color: #f9ec2d;
+}
+
+#loader {
+  margin: 3em;
+  width: 150px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #loader {
+    animation: phish-logo-spin infinite 3s linear;
+  }
+}
+
+@keyframes phish-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top {
+  background: linear-gradient(45deg, #018e4a 0%, #f9ec2d 100%);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.link {
+  background-color: rgba(0, 0, 0, 0.5); /* rgba(157, 201, 225, 0.75) */
+  padding: 0.75em;
+  text-align: center;
+  margin: 0.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #f9ec2d;
+  border: 2px solid #f9ec2d;
+  border-radius: 10px;
+}
+
+h1,
+h1.gradient-text {
+  font-size: 7em;
+  margin: 0.25em 0;
+}
+
+.gradient-text {
+  width: 100%;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0);
+  background: url('green_donut.jpg') repeat center center fixed;
+  background-size: 5%;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h2,
+h3,
+h4 {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+h4 {
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.search {
+  font-size: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(157, 201, 225, 0.75);
+  width: 300px;
+  padding: 1em;
+  margin: 0.7em 3em 1.4em;
+}
+
+button {
+  background-color: #018e4a;
+  color: #f9ec2d;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 1em;
+  margin: 1em;
+  text-transform: uppercase;
+  transition: 0.4s;
+  box-shadow: inset 1px 1px 1px 0px rgba(255,255,255,.5),
+                   4px 4px 15px 0px rgba(0,0,0,.1),
+                   2px 2px 3px 0px rgba(0,0,0,.1);
+}
+
+button:hover {
+  box-shadow:  2px 2px 3px 0 rgba(255,255,255,.5),
+              -2px -2px 3px 0 rgba(116, 125, 136, .2), 
+        inset -2px -2px 3px 0 rgba(255,255,255,.5),
+        inset  2px 2px 3px 0 rgba(116, 125, 136, .3);
+}
+
+.btnMap {
+  background-color: #f9ec2d;
+  color: #018e4a;
+}
+
+.btnz {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+li {
+  list-style: none;
+  text-align: justify;
+  font-family: 'Kanit', sans-serif;
+}
+
+ul {
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  padding: 0.5em 3em;
+}
+
+.showTimers {
+  background-color: #018e4a;
+  border-radius: 5px;
+  color: #f9ec2d;
+  padding: .25em .5em
+}
+
+@media all and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+
+  h1,
+  h1.gradient-text {
+    font-size: 5em;
+  }
+
+  img {
+    width: 350px;
+    height: auto;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+  }
+}
