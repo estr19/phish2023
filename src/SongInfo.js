@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {useEffect} from 'react';
 import { uuid } from 'uuidv4';
+import Masonry from 'react-masonry-css';
 import loader from './loader.png';
 import './App.css';
 
@@ -79,6 +80,13 @@ function SongInfo() {
     setMySearch("");
   };
 
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
+
   return (
     <div>
       <div className="container">
@@ -106,7 +114,12 @@ function SongInfo() {
       ) : (
         <div className="container">
           <h2>{name}</h2>
-          <div className="list">
+          <Masonry
+  breakpointCols={breakpointColumnsObj}
+  className="my-masonry-grid"
+  columnClassName="my-masonry-grid_column">
+  {/* array of JSX items */}
+  {/* <div className="list"> */}
             {mySongs.map((item) => {
               const {
                 id,
@@ -159,7 +172,9 @@ function SongInfo() {
                 </div>
               );
             })}
-          </div>
+          {/* </div> */}
+</Masonry>
+          
         </div>
       )}
     </div>

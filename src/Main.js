@@ -47,8 +47,7 @@ function Main() {
         setShowStatement(true);
       }
     }
-    return (setShows(newObjects),
-            setisTimerLoading(false));
+    return (setShows(newObjects), setisTimerLoading(false));
   };
 
   useEffect(() => {
