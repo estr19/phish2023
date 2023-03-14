@@ -49,7 +49,18 @@ function Main() {
       }
     }
     // work on code block for main timer, shuffling through this array shows.map(value => value.minLeft)
-    return (setShows(newObjects), setisTimerLoading(false), setTimer(newObjects[0].minLeft));
+    // let startTimes = shows.map(value => value.time);
+    // let todayStamp = new Date().getTime();
+    // console.log(startTimes);
+    // console.log(todayStamp);
+    // for (let t = 0; t <= startTimes.length; t++) {
+    //   if (startTimes[t] <= todayStamp) {
+    //     console.log('next show!')
+    //     setTimer(startTimes[t])
+    //   }
+    // }
+    setTimer(newObjects[0].minLeft);
+    return (setShows(newObjects), setisTimerLoading(false));
   };
 
   useEffect(() => {

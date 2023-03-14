@@ -5,7 +5,7 @@ export const phish = [
     venue: 'The Pavilion at Star Lake',
     photo: 'https://assets.livenationcdn.com/uploads/lawn-3.jpeg',
     link: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12150.09412925448!2d-80.4341542!3d40.4194049!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883447bdbad66f8b%3A0xea503365a8cdf72f!2sThe%20Pavilion%20at%20Star%20Lake!5e0!3m2!1sen!2sus!4v1677461282790!5m2!1sen!2sus',
-    time: 1689980400000,
+    time: 1689980400000, // 1678822251000
     address: '665 PA-18, Burgettstown, PA 15021',
     tickets: 'https://phish.com/tours/dates/fri-2023-7-21-the-pavilion-at-star-lake/',
     minLeft: {
