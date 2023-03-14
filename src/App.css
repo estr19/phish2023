@@ -17,9 +17,12 @@ body {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
+  /* flex-flow: row wrap; */
+  /* justify-content: center; */
   margin-left: -30px; /* gutter size offset */
   width: auto;
 }
+
 .my-masonry-grid_column {
   padding-left: 30px; /* gutter size */
   background-clip: padding-box;
@@ -135,15 +138,16 @@ h4 {
 }
 
 .item {
+  display: flex;
+  /* flex: 1 1 0; */
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: rgba(157, 201, 225, 0.75);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 300px;
   padding: 1em;
   margin: 0.7em 3em 1.4em;

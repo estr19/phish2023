@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
-import {useEffect} from 'react';
-import { uuid } from 'uuidv4';
-import Masonry from 'react-masonry-css';
-import loader from './loader.png';
-import './App.css';
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { uuid } from "uuidv4";
+import Masonry from "react-masonry-css";
+import loader from "./loader.png";
+import "./App.css";
 
 function SongInfo() {
   const myKey = "9F88FFD6577D0257D407";
@@ -11,7 +11,7 @@ function SongInfo() {
   const [mySearch, setMySearch] = useState("");
   const [isLoading, setLoading] = useState(true);
   const [submitted, setSubmitted] = useState("");
-  const [name, setName] = useState([]); 
+  const [name, setName] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -81,10 +81,9 @@ function SongInfo() {
   };
 
   const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
-    700: 2,
-    500: 1
+    default: 3,
+    1200: 2,
+    800: 1,
   };
 
   return (
@@ -115,11 +114,10 @@ function SongInfo() {
         <div className="container">
           <h2>{name}</h2>
           <Masonry
-  breakpointCols={breakpointColumnsObj}
-  className="my-masonry-grid"
-  columnClassName="my-masonry-grid_column">
-  {/* array of JSX items */}
-  {/* <div className="list"> */}
+            breakpointCols={breakpointColumnsObj}
+            className="my-masonry-grid"
+            columnClassName="my-masonry-grid_column"
+          >
             {mySongs.map((item) => {
               const {
                 id,
@@ -172,9 +170,7 @@ function SongInfo() {
                 </div>
               );
             })}
-          {/* </div> */}
-</Masonry>
-          
+          </Masonry>
         </div>
       )}
     </div>

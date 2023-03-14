@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
-import {useEffect} from 'react';
-import { phish } from './phish';
-import './App.css';
+import React, { useState } from "react";
+import { useEffect } from "react";
+import { phish } from "./phish";
+import Masonry from "react-masonry-css";
+import "./App.css";
 
 function Main() {
   const [shows, setShows] = useState(phish);
@@ -42,12 +43,13 @@ function Main() {
         } else {
           newObjects.push(show);
         }
-        setTimer(newObjects[0].minLeft);
+        // setTimer(newObjects[0].minLeft);
       } else {
         setShowStatement(true);
       }
     }
-    return (setShows(newObjects), setisTimerLoading(false));
+    // work on code block for main timer, shuffling through this array shows.map(value => value.minLeft)
+    return (setShows(newObjects), setisTimerLoading(false), setTimer(newObjects[0].minLeft));
   };
 
   useEffect(() => {
@@ -57,39 +59,62 @@ function Main() {
     return () => clearInterval(tick);
   });
 
+  // console.log(shows.map(value => value.minLeft));
+
   const clickMap = (id) => {
     const newShows = [];
-    shows.forEach(show => {
+    shows.forEach((show) => {
       if (show.id === id) {
-        const changedShows = {...show, showMap: !show.showMap};
+        const changedShows = { ...show, showMap: !show.showMap };
         newShows.push(changedShows);
       } else {
         newShows.push(show);
       }
     });
-    setShows(newShows); 
-  }
+    setShows(newShows);
+  };
+
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1,
+  };
 
   return (
     <div>
-      <div className='container'>
-        <h1 className='gradient-text'>2023 Phish Summer Tour</h1>
+      <div className="container">
+        <h1 className="gradient-text">2023 Phish Summer Tour</h1>
       </div>
-      <div className='container'>
-        <h2 style={{margin: '.25em'}}>The next show is in:</h2>
+      <div className="container">
+        <h2 style={{ margin: ".25em" }}>The next show is in:</h2>
         {isTimerLoading ? (
-          <h2 className='timer'>Loading . . .</h2>
-         ) : 
-        <h2 className='timer'>
-        {showStatement ? 
-          `It's showtime!`
-        : (
-          `${timer.days} : ${timer.hours} : ${timer.minutes} : ${timer.seconds}`
-        )}</h2>}
+          <h2 className="timer">Loading . . .</h2>
+        ) : (
+          <h2 className="timer">
+            {showStatement
+              ? `It's showtime!`
+              : `${timer.days} : ${timer.hours} : ${timer.minutes} : ${timer.seconds}`}
+          </h2>
+        )}
       </div>
-      <div className='list'>
-        {shows.map((element => {
-          const {id, date, venue, photo, link, address, tickets, showMap, minLeft} = element;
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {shows.map((element) => {
+          const {
+            id,
+            date,
+            venue,
+            photo,
+            link,
+            address,
+            tickets,
+            showMap,
+            minLeft,
+          } = element;
           return (
             <div
               className="item"
@@ -108,13 +133,13 @@ function Main() {
                   This show is in:{" "}
                   {isTimerLoading ? (
                     <span className="showTimers">Loading . . .</span>
-                  ) : 
-                  <span className="showTimers">
-                  {showStatement ? 
-                    `It's showtime!`
-                  : (
-                    `${minLeft.days} : ${minLeft.hours} : ${minLeft.minutes} : ${minLeft.seconds}`
-                  )}</span>}
+                  ) : (
+                    <span className="showTimers">
+                      {showStatement
+                        ? `It's showtime!`
+                        : `${minLeft.days} : ${minLeft.hours} : ${minLeft.minutes} : ${minLeft.seconds}`}
+                    </span>
+                  )}
                 </h3>
               )}
               <h2>{date}</h2>
@@ -145,8 +170,8 @@ function Main() {
               ></iframe>
             </div>
           );
-        }))}
-      </div>
+        })}
+      </Masonry>
     </div>
   );
 }
