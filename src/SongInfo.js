@@ -34,7 +34,7 @@ function SongInfo() {
         setlist = dataSetlist.data.map(
           (value) => value.set + " " + value.song + " (" + value.gap + ")"
         );
-        console.log(dataSetlist.data);
+        // console.log(dataSetlist.data);
         mySong = { ...mySong, setlist, index };
         newObjects.push(mySong);
       }
@@ -71,10 +71,10 @@ function SongInfo() {
         .replace(/[^\w-]+/g, "")
     );
     let words = mySearch.split("-");
-    console.log(words);
+    // console.log(words);
     for (let i = 0; i < words.length; i++) {
       words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-      console.log(words);
+      // console.log(words);
     }
     setName(words.join(" "));
     setMySearch("");

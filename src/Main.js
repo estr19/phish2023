@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import { phish } from "./phish";
-import Masonry from "react-masonry-css";
+// import Masonry from "react-masonry-css";
 import "./App.css";
 
 function Main() {
@@ -85,12 +85,11 @@ function Main() {
     setShows(newShows);
   };
 
-  const breakpointColumnsObj = {
-    default: 4,
-    1100: 3,
-    700: 2,
-    500: 1,
-  };
+  // const breakpointColumnsObj = {
+  //   default: 3,
+  //   1200: 2,
+  //   800: 1,
+  // };
 
   return (
     <div>
@@ -109,11 +108,12 @@ function Main() {
           </h2>
         )}
       </div>
-      <Masonry
+      {/* <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
-      >
+      > */}
+        <div className="list">
         {shows.map((element) => {
           const {
             id,
@@ -182,7 +182,8 @@ function Main() {
             </div>
           );
         })}
-      </Masonry>
+        </div>
+      {/* </Masonry> */}
     </div>
   );
 }
