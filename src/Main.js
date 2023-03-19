@@ -13,6 +13,8 @@ function Main() {
   const runFunctionWithTimes = () => {
     let newObjects = [];
     for (let i = 0; i < shows.length; i++) {
+      // let startTimes = shows.map(value => value.time);
+      // let todayStamp = new Date().getTime();
       let show = shows[i];
       let showTime = show.time;
       let showDate = new Date(showTime);
@@ -43,22 +45,28 @@ function Main() {
         } else {
           newObjects.push(show);
         }
+        console.log(shows);
         // setTimer(newObjects[0].minLeft);
       } else {
+        // minLeft = {
+        //   days: 0,
+        //   hours: 0,
+        //   minutes: 0,
+        //   seconds: 0,
+        // };
+        // show = { ...show, minLeft };
+        // newObjects.push(show);
         setShowStatement(true);
       }
     }
     // work on code block for main timer, shuffling through this array shows.map(value => value.minLeft)
-    // let startTimes = shows.map(value => value.time);
-    // let todayStamp = new Date().getTime();
-    // console.log(startTimes);
-    // console.log(todayStamp);
-    // for (let t = 0; t <= startTimes.length; t++) {
-    //   if (startTimes[t] <= todayStamp) {
-    //     console.log('next show!')
-    //     setTimer(startTimes[t])
-    //   }
-    // }
+        // console.log(startTimes);
+        // console.log(todayStamp);
+        
+          // if (startTimes[0] <= todayStamp) {
+          //   console.log('next show!')
+          //   setTimer(newObjects[1].minLeft)
+          // }
     setTimer(newObjects[0].minLeft);
     return (setShows(newObjects), setisTimerLoading(false));
   };
