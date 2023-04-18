@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { uuid } from "uuidv4";
+import { v4 as uuid_v4 } from "uuid";
 import Masonry from "react-masonry-css";
 import loader from "./loader.png";
 import "./App.css";
@@ -120,7 +120,6 @@ function SongInfo() {
           >
             {mySongs.map((item) => {
               const {
-                id,
                 showdate,
                 country,
                 tourname,
@@ -134,7 +133,7 @@ function SongInfo() {
               } = item;
               return (
                 <div
-                  key={id}
+                  key={uuid_v4()}
                   className="item"
                   style={{
                     backgroundColor: "rgba(1, 152, 79, 0.75)",
@@ -164,7 +163,7 @@ function SongInfo() {
                   <ul style={{ display: `${showMore ? "flex" : "none"}` }}>
                     <p>song name (show gap)</p>
                     {setlist.map((element) => {
-                      return <li key={uuid()}>&nbsp;&nbsp;{element}</li>;
+                      return <li key={uuid_v4()}>&nbsp;&nbsp;{element}</li>;
                     })}
                   </ul>
                 </div>

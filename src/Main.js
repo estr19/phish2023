@@ -45,7 +45,7 @@ function Main() {
         } else {
           newObjects.push(show);
         }
-        console.log(shows);
+        // console.log(shows);
         // setTimer(newObjects[0].minLeft);
       } else {
         // minLeft = {
