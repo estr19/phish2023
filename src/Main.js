@@ -48,14 +48,14 @@ function Main() {
         // console.log(shows);
         // setTimer(newObjects[0].minLeft);
       } else {
-        // minLeft = {
-        //   days: 0,
-        //   hours: 0,
-        //   minutes: 0,
-        //   seconds: 0,
-        // };
-        // show = { ...show, minLeft };
-        // newObjects.push(show);
+        minLeft = {
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        };
+        show = { ...show, minLeft };
+        newObjects.push(show);
         setShowStatement(true);
       }
     }
